@@ -83,6 +83,10 @@ const geoCards = [
   }
 ];
 
+app.get ('/', (req, res, next) => {
+  res.json({status: 'OK'});
+})
+
 app.get ('/geocards', (req, res, next) => {
 
     try{
